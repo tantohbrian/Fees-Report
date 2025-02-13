@@ -50,15 +50,17 @@ input[type="file"] {
     flex: 1;
   }
 }
-.button-group {
+.buttons-group {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
 }
 .btn {
   background-color: rgb(33, 101, 135);
   padding: 0.5em 2em;
   border: none;
   cursor: pointer;
+
   outline: none;
   color: white;
   border-radius: 4px;
@@ -128,6 +130,11 @@ input[type="file"] {
   padding: 0.8em;
   border-radius: 4px;
 }
+.missing-field {
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 .bold_borders {
   outline: 2px solid #101010;
   > * {
@@ -164,6 +171,7 @@ input[type="file"] {
 
   margin-top: 0.25em;
 }
+
 .sign {
   margin-top: 7em;
   display: flex;

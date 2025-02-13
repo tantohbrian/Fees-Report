@@ -14,7 +14,7 @@ document.getElementById("csvFile").addEventListener("change", function (e) {
       }).data;
 
       const generateHighlight = (value) => {
-        return value ? value : '<span class="missing-field">Missing</span>';
+        return value ? value : '<span class="missing-field">N/A</span>';
       };
 
       btn.addEventListener("click", () => {
